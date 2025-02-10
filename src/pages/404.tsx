@@ -1,11 +1,5 @@
-import { useEffect, useState } from "react";
+import React from "react";
 
 export default function Custom404() {
-  const [mensagem, setMensagem] = useState("Carregando...");
-
-  useEffect(() => {
-    setMensagem("Página não encontrada!");
-  }, []);
-
-  return <h1>{mensagem}</h1>;
+  return <h1>Página não encontrada!</h1>;
 }

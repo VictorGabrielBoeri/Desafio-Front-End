@@ -1,5 +1,14 @@
-const Paginas = ({ totalPaginas, indiceAtual, setIndiceAtual, postsPorPagina }) => {
-    const aoClicarNoPonto = (indice) => {
+import React from 'react';
+
+interface PaginasProps {
+    totalPaginas: number;
+    indiceAtual: number;
+    setIndiceAtual: (indice: number) => void;
+    postsPorPagina: number;
+}
+
+const Paginas: React.FC<PaginasProps> = ({ totalPaginas, indiceAtual, setIndiceAtual, postsPorPagina }) => {
+    const aoClicarNoPonto = (indice: number) => {
         setIndiceAtual(indice * postsPorPagina);
     };
 

@@ -1,3 +1,4 @@
+// src/pages/index.tsx
 import { useEffect, useState } from 'react';
 import type { NextPage } from 'next';
 import GlobalStyles from '../app/styles/globalStyles';
@@ -13,14 +14,22 @@ import Rodape from '@/components/Rodape';
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(true); 
+  const [isClient, setIsClient] = useState(false); // Variável para verificar se estamos no cliente
+
   useEffect(() => {
-   
+    setIsClient(true);  // Marca que a renderização agora é no cliente
+
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
+
+  // Apenas renderiza quando for no cliente
+  if (!isClient) {
+    return null; // Não renderiza nada durante a renderização no servidor
+  }
 
   if (loading) {
     return <Loading />;
