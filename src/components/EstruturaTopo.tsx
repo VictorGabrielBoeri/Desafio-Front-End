@@ -2,10 +2,11 @@ import { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import ConteudoTopo from './ConteudoTopo';
+import Image from 'next/image';
 
 const EstruturaTopo = () => {
   const [navAberta, setNavAberta] = useState(false);
-  const navRef = useRef(null);
+  const navRef = useRef(null); 
 
   const alternarNav = () => {
     setNavAberta(!navAberta);
@@ -14,17 +15,40 @@ const EstruturaTopo = () => {
   return (
     <>
       <header className="d-grid align-items-start p-sm-3 px-sm-4 padding-resp" style={{ padding: '30px 100px 30px 100px' }}>
-        <img className='img-fluid position-absolute top-0 start-0 w-100 h-154vh-resp' src="/img/topo/Rectangle-4.png" alt="" style={{ height: '750px', zIndex: '-11' }} />
-        <img className='img-fluid opacity-50 position-absolute top-0 start-0 w-100 h-154vh-resp' src="/img/topo/lines.png" alt="" style={{ height: '750px', zIndex: '-10' }} />
+        <Image
+          className='img-fluid position-absolute top-0 start-0 w-100 h-154vh-resp bg-image-topo'
+          src="/img/topo/Rectangle-4.png"
+          alt="Imagem de fundo"
+          objectFit="cover"
+          width={1920}
+          height={900}
+          style={{ zIndex: '-11' }}
+        />
+        <Image
+          className='img-fluid opacity-50 position-absolute top-0 start-0 w-100 h-154vh-resp bg-image-topo'
+          src="/img/topo/lines.png"
+          alt="Linhas decorativas"
+          objectFit="cover"
+          width={1920}
+          height={900}
+          style={{ zIndex: '-10' }}
+        />
 
         <div className="d-flex justify-content-between align-items-start mb-5 flex-wrap w-100-resp">
           <div className="d-flex justify-content-start">
-            <img src="/img/topo/logo-smartmoney.png" alt="Logo SmartMoney" className="logo img-resp" width={200} height={40} />
+            <Image
+              src="/img/topo/logo-smartmoney.png"
+              alt="Logo SmartMoney"
+              className="logo img-resp"
+              width={200}
+              height={40}
+            />
           </div>
 
           <div className="d-flex justify-content-end align-items-center gap-5 flex-wrap">
-            <nav className="navbar navbar-expand-lg navbar-light d-flex justify-content-end">
-              <button className="navbar-toggler btn btn-sm btn-primary"
+            <nav className="navbar navbar-expand-lg navbar-light d-flex justify-content-end" ref={navRef}>
+              <button
+                className="navbar-toggler btn btn-sm btn-primary"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav"

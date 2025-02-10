@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { faMobileScreen } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
 
 const SolucaoCustomizada = () => {
     return (
-        <div className="d-flex d-sm-grid justify-content-between justify-content-sm-center align-items-center gap-0 mt-5 w-100-resp padding-resp" style={{ padding: '30px 100px 30px 100px' }}>
+        <div className="d-flex d-sm-grid justify-content-between justify-content-sm-center align-items-center gap-0 mt-5 w-100-resp padding-resp" style={{ padding: '0px 100px 30px 100px' }}>
             <div className='w-100-resp text-sm-center' style={{ width: '60%' }}>
-                <h1 className="text-dark fs-32px-resp" style={{ fontSize: '40px' }}>Conheça nossas <br />solução customizadas</h1>
+                <h1 className="text-dark fs-32px-resp" style={{ fontSize: '40px' }}>Conheça nossas <br />soluções customizadas</h1>
                 <p className="fw-normal fs-19px fs-5 mb-5 w-100-resp" style={{ width: '65%' }}>Suscipit pellentesque praesent auctor molestie massa nunc vitae felis eget est ut gravida in maecenas. Tempus in in in congue proin.</p>
                 <p className="fw-normal fs-5 fs-6-sm"><FontAwesomeIcon style={{ color: '#35d9a8' }} icon={faCircleCheck} /> Sagittis sed cursus sed malesuada ultrices</p>
                 <p className="fw-normal fs-5 fs-6-sm"><FontAwesomeIcon style={{ color: '#35d9a8' }} icon={faCircleCheck} /> Lectus ac at massa ac tellus fringilla aenean</p>
@@ -16,9 +17,29 @@ const SolucaoCustomizada = () => {
             </div>
             <div className="position-relative w-75">
                 <div className="position-absolute top-sm-0 start-100-resp end-0" style={{ top: '-270px' }}>
-                    <img className="position-absolute img-frame-resp" src="/img/secao/Frame-151.png" alt="" style={{ left: '-219px', bottom: '41px' }} />
-                    <img className="img-group-resp" src="/img/secao/Group-40017.png" width={530} />
-                    <img className="position-absolute img-frame482140-resp" src="/img/secao/Frame-482140.svg" alt="" style={{ right: '30px', bottom: '34px' }} />
+                    <Image 
+                        className="position-absolute img-frame-resp"
+                        src="/img/secao/Frame-151.png"
+                        alt="Frame"
+                        style={{ left: '-185px', bottom: '41px' }}
+                        width={278}
+                        height={185}
+                    />
+                    <Image 
+                        className="img-group-resp"
+                        src="/img/secao/Group-40017.png"
+                        alt="Grupo 40017"
+                        width={520}
+                        height={640}
+                    />
+                    <Image
+                        className="position-absolute img-frame482140-resp"
+                        src="/img/secao/Frame-482140.svg"
+                        alt="Frame 482140"
+                        style={{ right: '30px', bottom: '34px' }}
+                        width={200}
+                        height={100}
+                    />
                 </div>
             </div>
         </div>

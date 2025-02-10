@@ -6,17 +6,34 @@ import Post from './Posts';
 import Paginas from './Paginas';
 import { useMediaQuery } from 'react-responsive';
 
+interface PostType {
+    id: number;    
+    title: {
+        rendered: string;
+    };
+    class_list: string[];
+    date: string;
+    content: string;
+}
+
 const CarrosselNoticias = () => {
-    const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState<PostType[]>([]); 
     const [indiceAtual, setIndiceAtual] = useState(0);
+    const [carregando, setCarregando] = useState(true);
     const postsPorPagina = 4;
     const ehMobile = useMediaQuery({ query: '(max-width: 768px)' });
-    const carrosselRef = useRef(null);
+    const carrosselRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         const obterPosts = async () => {
-            const dados = await fetchPosts();
-            setPosts(dados);
+            try {
+                const dados = await fetchPosts();
+                setPosts(dados);
+            } catch (erro) {
+                console.error('Erro ao carregar posts:', erro);
+            } finally {
+                setCarregando(false);
+            }
         };
         obterPosts();
     }, []);
@@ -47,6 +64,10 @@ const CarrosselNoticias = () => {
         }
     };
 
+    if (carregando) {
+        return <div>Carregando...</div>;
+    }
+
     return (
         <>
             <BtnNavegacao
@@ -54,7 +75,11 @@ const CarrosselNoticias = () => {
                 onAnterior={postsAnteriores}
                 ehMobile={ehMobile}
             />
-            <div className="row flex-nowrap" style={{ gap: '20px' }} ref={carrosselRef} className={`d-flex ${ehMobile ? 'overflow-auto' : ''}`}>
+            <div
+                className={`row flex-nowrap ${ehMobile ? 'overflow-auto' : ''}`}
+                style={{ gap: '20px' }}
+                ref={carrosselRef}
+            >
                 {posts.slice(indiceAtual, indiceAtual + postsPorPagina).map(post => (
                     <Post key={post.id} post={post} />
                 ))}

@@ -1,4 +1,3 @@
-import { width } from "./../../../node_modules/@fortawesome/free-solid-svg-icons/fa1.d";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle/*css*/ `
@@ -14276,14 +14275,14 @@ fieldset:disabled .btn {
         }
 
         .img-vector-1270-resp-pc {
-            top: 505px !important;
+            top: 440px!important;
             left: 740px!important;
             height: 40px !important;
             width: 160px !important;
         }
 
         .img-vector-1271-resp-pc {
-            top: 65px !important;
+            top: 80px !important;
             left: 925px !important;
             height: 40px !important;
             width: 160px !important;
@@ -14291,7 +14290,7 @@ fieldset:disabled .btn {
 
         .img-tag-resp-pc {
             left: 605px !important;
-            top: 395px !important;
+            top: 332px!important;
             height: 35px !important;
             width: 160px !important;
         }
@@ -14299,8 +14298,43 @@ fieldset:disabled .btn {
         .padding-footer-pc {
             padding: 170px 65px 0px !important;
         }
+
+        .bg-img-vantagens-resp {
+            height: 1420px !important;
+        }
     }
 
+    .bg-image-topo {
+        height: 760px !important;
+    }
+
+    .bg-image-topo-noticias {
+        height: 110px !important;
+    }
+
+    .bg-img-vantagens {
+        height: 1130px! important;
+    }
+
+    .tamano-icon-fale-conosco {
+        height: 64px! important;
+        width: 64px! important;
+    }
+
+    .icone-rodape {
+        height: 25px! important;
+        width: 25px! important;
+    }
+
+    .icone-insta-rodape {
+        height: 20px! important;
+        width: 15px! important;
+    }
+
+    .icone-face-rodape {
+        height: 35px! important;
+        width: 25px! important;
+    }
 `;
 
 export default GlobalStyles;

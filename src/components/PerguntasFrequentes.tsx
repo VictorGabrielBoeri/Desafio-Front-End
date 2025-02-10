@@ -4,8 +4,8 @@ import ListaPerguntas from "./ListaPerguntas";
 const PerguntasFrequentes = () => {
     return (
         <>
-            <div className="py-5" style={{ background: '#F2F5FC' }}></div>
-            <div className="padding-resp-perguntas bg-white-resp" style={{ background: '#F2F5FC', padding: '70px 100px 0px 100px'}}>
+            <div className="py-5 d-block d-md-none" style={{ background: '#F2F5FC' }}></div>
+            <div className="padding-resp-perguntas bg-white-resp" style={{ background: '#F2F5FC', padding: '70px 100px 70px 100px'}}>
                 <div className="d-flex d-sm-grid justify-content-between">
                     <div className="w-100-resp" style={{ width: '28%' }}>
                         <div className="mb-5">
@@ -22,7 +22,7 @@ const PerguntasFrequentes = () => {
                     <ListaPerguntas />
                 </div>
             </div>
-            <div className="py-5" style={{ background: '#F2F5FC' }}></div>
+            <div className="py-5 d-block d-md-none" style={{ background: '#F2F5FC' }}></div>
         </>
     );
 };

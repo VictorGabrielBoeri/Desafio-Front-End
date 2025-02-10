@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
 const ListaPerguntas = () => {
-    const [collapseAtivo, setCollapseAtivo] = useState(null);
+    const [collapseAtivo, setCollapseAtivo] = useState<number | null>(null);
 
     useEffect(() => {
+        // Importando o Bootstrap após o componente ser montado
         import('bootstrap/dist/js/bootstrap.bundle.min.js');
     }, []);
 
-    const alternarCollapse = (index) => {
+    const alternarCollapse = (index: number) => {
         setCollapseAtivo(collapseAtivo === index ? null : index);
     };
 
@@ -24,7 +25,15 @@ const ListaPerguntas = () => {
                     { id: 5, pergunta: "O que é o Feed? Como faço para configurá-lo?" },
                 ].map((item, index) => (
                     <div key={item.id}>
-                        <a className={`list-group-item border-resp p-5 py-sm-4 ${collapseAtivo === index ? 'border-0' : ''}`} data-bs-toggle="collapse" data-bs-target={`#collapseExample${item.id}`} role="button" aria-expanded={collapseAtivo === index ? 'true' : 'false'} aria-controls={`collapseExample${item.id}`} onClick={() => alternarCollapse(index)}>
+                        <a
+                            className={`list-group-item border-resp p-5 py-sm-4 ${collapseAtivo === index ? 'border-0' : ''}`}
+                            data-bs-toggle="collapse"
+                            data-bs-target={`#collapseExample${item.id}`}
+                            role="button"
+                            aria-expanded={collapseAtivo === index ? 'true' : 'false'}
+                            aria-controls={`collapseExample${item.id}`}
+                            onClick={() => alternarCollapse(index)}
+                        >
                             <div className="d-flex justify-content-between align-items-center">
                                 <div className="d-flex align-items-center">
                                     <p className="text-primary fs-3">{item.id < 10 ? `0${item.id}` : item.id}</p>
@@ -34,7 +43,10 @@ const ListaPerguntas = () => {
                             </div>
                         </a>
                         <div className={`collapse ${collapseAtivo === index ? 'show' : ''}`} id={`collapseExample${item.id}`}>
-                            <div className="card card-body border-0 pb-5 pt-0" style={{ paddingLeft: '95px', paddingRight: '95px' }}>
+                            <div
+                                className="card card-body border-0 pb-5 pt-0"
+                                style={{ paddingLeft: '95px', paddingRight: '95px' }}
+                            >
                                 Conteúdo fictício para o componente collapse. Este painel está oculto por padrão, mas será revelado quando o usuário ativar o gatilho relevante.
                             </div>
                         </div>

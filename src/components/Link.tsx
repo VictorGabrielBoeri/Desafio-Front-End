@@ -1,10 +1,9 @@
 import NextLink from 'next/link';
-import { ReactNode } from 'react';
+import { ReactNode, AnchorHTMLAttributes } from 'react';
 
-interface LinkProps {
+interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
     children: ReactNode;
     href: string;
-    [key: string]: any;
 }
 
 export default function Link({ children, href, ...props }: LinkProps) {
