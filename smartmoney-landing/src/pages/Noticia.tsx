@@ -71,7 +71,7 @@ const Noticia = () => {
                     </div>
 
                     <div className="d-grid justify-content-center w-50 mx-auto mb-5">
-                        <div className="border border-2 border-secondary p-5" style={{ backgroundColor: '#f3f4f5' }}>
+                        <div className="border p-5" style={{ backgroundColor: '#f3f4f5' }}>
                             <p className="fs-6 mb-0">Você já ouviu falar na utilização de manual de atendimento ao cliente na advocacia? É um documento que aborda os principais pontos de dúvida do relacionamento do cliente com o advogado ou escritório e que visa esclarecer, desde já, como esse relacionamento irá funcionar.</p>
                         </div>
 
