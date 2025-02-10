@@ -1,4 +1,4 @@
-import CarrouselNoticias from "./CarrouselNoticias";
+import CarrouselNoticias from "../components/CarrouselNoticias";
 
 const AreaNoticias = () => {
     return (

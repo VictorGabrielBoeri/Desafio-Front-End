@@ -1,4 +1,3 @@
-// index.tsx
 import GlobalStyles from '../app/styles/globalStyles';
 
 const Loading = () => {

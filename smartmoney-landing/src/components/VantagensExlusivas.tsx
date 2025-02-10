@@ -24,11 +24,11 @@ const VantagensExlusivas = () => {
                     </div>
 
                     <div className="position-relative">
-                        <img className='img-fluid img-ADOBESTOCK-1-resp position-absolute top-0 rounded-2' src="/img/secao/ADOBESTOCK_341268584-1.png" width={382} style={{ height: '400px', zIndex: '10', left: '740px'}} />
-                        <img className='img-fluid img-Mask-group-database-resp position-absolute' src="/img/secao/Mask-group-database.png" width={381}  style={{ height: '480px', zIndex: '10', top: '140px', left: '1165px' }} />
-                        <img className='img-fluid img-vector-1270-resp position-absolute' src="/img/secao/Vector-1270.png" width={149} style={{ height: '55px', zIndex: '10', left: '905px', top: '460px' }} />
-                        <img className='img-fluid img-vector-1271-resp position-absolute' src="/img/secao/Vector-1271.png" width={149} style={{ height: '55px', zIndex: '10', left: '1210px', top: '40px' }} />
-                        <img className='img-fluid img-tag-resp position-absolute' src="/img/secao/tag.png" width={260} style={{ height: '38px', zIndex: '10', left: '678px', top: '230px' }} />
+                        <img className='img-fluid img-ADOBESTOCK-1-resp position-absolute top-0 rounded-2 img-ADOBESTOCK-resp-pc' src="/img/secao/ADOBESTOCK_341268584-1.png" width={382} style={{ height: '480px', zIndex: '10', left: '740px'}} />
+                        <img className='img-fluid img-Mask-group-database-resp position-absolute img-Mask-group-database-resp-pc' src="/img/secao/Mask-group-database.png" width={381}  style={{ height: '480px', zIndex: '10', top: '140px', left: '1165px' }} />
+                        <img className='img-fluid img-vector-1270-resp position-absolute img-vector-1270-resp-pc' src="/img/secao/Vector-1270.png" width={149} style={{ height: '55px', zIndex: '10', left: '905px', top: '520px' }}/>
+                        <img className='img-fluid img-vector-1271-resp position-absolute img-vector-1271-resp-pc' src="/img/secao/Vector-1271.png" width={149} style={{ height: '55px', zIndex: '10', left: '1210px', top: '40px' }} />
+                        <img className='img-fluid img-tag-resp position-absolute img-tag-resp-pc' src="/img/secao/tag.png" width={260} style={{ height: '38px', zIndex: '10', left: '678px', top: '400px' }} />
                     </div>
 
                     <div className="d-grid gap-2 w-50">

@@ -5,7 +5,7 @@ const TextoTopo = () => {
     return (
         <>
             <div>
-                <div className="w-100-resp text-sm-center d-sm-flex justify-content-sm-center">
+                <div className="w-100-resp text-sm-center d-sm-flex justify-content-sm-center mb-sm-4">
                     <div className="border borda-customizada rounded-4 w-70-resp" style={{ width: '39%', borderColor: '#1d1b38 !important' }}>
                         <p className="text-white text-sm-center p-4 py-3 mb-0">
                             <FontAwesomeIcon icon={faStar} size="1x" color="#FFD700" /> Tecnologia disruptiva

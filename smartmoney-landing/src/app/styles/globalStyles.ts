@@ -14262,6 +14262,45 @@ fieldset:disabled .btn {
         border-color: #1d1b38 !important;
     }
 
+    @media (min-width: 1400px) and (max-width: 1540px) {
+        .img-ADOBESTOCK-resp-pc {
+            left: 625px !important;
+            width: 282px !important;
+        }
+
+        .img-Mask-group-database-resp-pc {
+            left: 945px !important;
+            height: 360px !important;
+            width: 281px !important;
+            top: 160px !important;
+        }
+
+        .img-vector-1270-resp-pc {
+            top: 505px !important;
+            left: 740px!important;
+            height: 40px !important;
+            width: 160px !important;
+        }
+
+        .img-vector-1271-resp-pc {
+            top: 65px !important;
+            left: 925px !important;
+            height: 40px !important;
+            width: 160px !important;
+        }
+
+        .img-tag-resp-pc {
+            left: 605px !important;
+            top: 395px !important;
+            height: 35px !important;
+            width: 160px !important;
+        }
+
+        .padding-footer-pc {
+            padding: 170px 65px 0px !important;
+        }
+    }
+
 `;
 
 export default GlobalStyles;

@@ -14,7 +14,7 @@ const Rodape = () => {
                     <img className='img-fluid position-absolute top-0 start-0 w-100 opacity-25 h-1250-resp' src="/img/rodape/Rectangle.png" style={{ height: '610px', zIndex: '-10' }} />
                     <img className='img-fluid position-absolute top-0 start-0 w-100 opacity-25 h-1250-resp' src="/img/rodape/Rectangle-7.png" style={{ height: '610px', zIndex: '-10' }} />
                 </div>
-                <div className="padding-footer" style={{ padding: '170px 100px 0px 100px' }}>
+                <div className="padding-footer padding-footer-pc" style={{ padding: '170px 100px 0px 100px' }}>
                     <div className="d-flex d-sm-grid justify-content-between w-100 mb-5">
                         <div className="d-grid justify-content-start w-50 w-100-resp mb-sm-5">
                             <div className="w-100-resp text-sm-center" style={{ width: '650px' }}>

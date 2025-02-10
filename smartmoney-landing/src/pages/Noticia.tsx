@@ -1,45 +1,29 @@
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import { fetchPosts } from '../services/api';
-import EstruturaTopoNoticia from '../components/EstruturaTopoNoticia';
 import Link from '../components/Link';
 import Loading from '../components/Loading';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faHouse } from '@fortawesome/free-solid-svg-icons';
 import Rodape from '../components/Rodape';
+import useNoticia from '../hooks/useNoticias';
+import GlobalStyles from '@/app/styles/globalStyles';
+import EstruturaTopoNoticia from '../components/EstruturaTopoNoticia';
 
 const Noticia = () => {
-    const [post, setPost] = useState(null);
     const router = useRouter();
     const { id } = router.query;
+    const { post, carregando } = useNoticia(id);
 
-    useEffect(() => {
-        if (id) {
-            const getPost = async () => {
-                const data = await fetchPosts();
-                const foundPost = data.find(post => post.id === parseInt(id));
-                setPost(foundPost);
-            };
-            getPost();
-        }
-    }, [id]);
-
-    const [loading, setLoading] = useState(true);
-    useEffect(() => {
-
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 5000);
-
-        return () => clearTimeout(timer);
-    }, []);
-
-    if (loading) {
+    if (carregando) {
         return <Loading />;
+    }
+
+    if (!post) {
+        return <div>Post não encontrado</div>;
     }
 
     return (
         <>
+            <GlobalStyles />
             <EstruturaTopoNoticia />
             <div style={{ padding: '30px 100px 0px 100px' }}>
                 <div className="d-flex align-items-start p-sm-3 px-sm-4 padding-resp">
@@ -51,7 +35,7 @@ const Noticia = () => {
                         <div className="d-flex justify-content-start align-items-center mb-3">
                             <FontAwesomeIcon className="text-secondary me-1" icon={faHouse} />
                             <p className="text-secondary d-flex justify-content-start align-items-center mb-0">/ artigos /
-                                <p className="text-primary ms-1 mb-0">Lorem, ipsum dolor sit amet consecte...</p>
+                                <a className="text-decoration-none text-primary ms-1 mb-0">Lorem, ipsum dolor sit amet consecte...</a>
                             </p>
                         </div>
                         <h1 className="mb-4" style={{ fontSize: '40px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo dui nec dolor ut commodo dui nec ipsum</h1>
@@ -67,7 +51,7 @@ const Noticia = () => {
 
                 <div className="d-grid">
                     <div className="d-flex justify-content-center my-5">
-                        <img className="img-fluid" src="/img/secao/Group-135.png" style={{ width: '1008px', height: '434px' }} />
+                        <img className="img-fluid" src="/img/secao/Group-135.png" style={{ width: '1250px', height: '434px' }} />
                     </div>
 
                     <div className="d-grid justify-content-center w-50 mx-auto mb-5">
