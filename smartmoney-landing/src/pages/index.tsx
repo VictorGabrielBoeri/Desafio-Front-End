@@ -6,6 +6,10 @@ import SolucaoCustomizada from '../components/SolucaoCustomizada';
 import CardsInformativos from '@/components/CardsInformativos';
 import AreaNoticias from '@/components/AreaNoticias';
 import Loading from '@/components/Loading';
+import VantagensExlusivas from '@/components/VantagensExlusivas';
+import FaleConosco from '@/components/FaleConosco';
+import PerguntasFrequentes from '@/components/PerguntasFrequentes';
+import Rodape from '@/components/Rodape';
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(true); 
@@ -29,6 +33,10 @@ const Home: NextPage = () => {
       <SolucaoCustomizada />
       <CardsInformativos />
       <AreaNoticias />
+      <VantagensExlusivas />
+      <FaleConosco />
+      <PerguntasFrequentes />
+      <Rodape />
     </>
   );
 };

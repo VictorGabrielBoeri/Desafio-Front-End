@@ -14,8 +14,8 @@ const EstruturaTopo = () => {
   return (
     <>
       <header className="d-grid align-items-start p-sm-3 px-sm-4 padding-resp" style={{ padding: '30px 100px 30px 100px' }}>
-        <img className='img-fluid position-absolute top-0 start-0 w-100 h-154vh-resp' src="/img/topo/Rectangle-4.png" alt="" style={{ height: '700px', zIndex: '-11' }} />
-        <img className='img-fluid opacity-50 position-absolute top-0 start-0 w-100 h-154vh-resp' src="/img/topo/lines.png" alt="" style={{ height: '700px', zIndex: '-10' }} />
+        <img className='img-fluid position-absolute top-0 start-0 w-100 h-154vh-resp' src="/img/topo/Rectangle-4.png" alt="" style={{ height: '750px', zIndex: '-11' }} />
+        <img className='img-fluid opacity-50 position-absolute top-0 start-0 w-100 h-154vh-resp' src="/img/topo/lines.png" alt="" style={{ height: '750px', zIndex: '-10' }} />
 
         <div className="d-flex justify-content-between align-items-start mb-5 flex-wrap w-100-resp">
           <div className="d-flex justify-content-start">

@@ -16,8 +16,8 @@ const SolucaoCustomizada = () => {
             </div>
             <div className="position-relative w-75">
                 <div className="position-absolute top-sm-0 start-100-resp end-0" style={{ top: '-270px' }}>
-                    <img className="position-absolute img-frame-resp" src="/img/secao/Frame-151.png" alt="" style={{ left: '-229px', bottom: '41px' }} />
-                    <img className="img-group-resp" src="/img/secao/Group-40017.png" alt="" />
+                    <img className="position-absolute img-frame-resp" src="/img/secao/Frame-151.png" alt="" style={{ left: '-219px', bottom: '41px' }} />
+                    <img className="img-group-resp" src="/img/secao/Group-40017.png" width={530} />
                     <img className="position-absolute img-frame482140-resp" src="/img/secao/Frame-482140.svg" alt="" style={{ right: '30px', bottom: '34px' }} />
                 </div>
             </div>

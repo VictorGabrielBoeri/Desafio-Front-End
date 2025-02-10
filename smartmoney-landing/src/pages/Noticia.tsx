@@ -6,7 +6,7 @@ import Link from '../components/Link';
 import Loading from '../components/Loading';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faHouse } from '@fortawesome/free-solid-svg-icons';
-import RodapeNoticias from '../components/RodapeNoticias';
+import Rodape from '../components/Rodape';
 
 const Noticia = () => {
     const [post, setPost] = useState(null);
@@ -82,7 +82,7 @@ const Noticia = () => {
                     </div>
                 </div>
             </div>
-            <RodapeNoticias />
+            <Rodape />
         </>
     );
 };

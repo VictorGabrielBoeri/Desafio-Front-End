@@ -10905,6 +10905,10 @@ fieldset:disabled .btn {
         font-size: 19px !important;
     }
 
+    .fs-24px-resp {
+        font-size: 24px !important;
+    }
+
     .w-67-resp {
         width: 67% !important;
     }
@@ -10974,6 +10978,106 @@ fieldset:disabled .btn {
 
     .padding-resp {
         padding: 50px 30px 50px !important;
+    }
+
+    .position-relative-sm {
+        position: relative !important;
+    }
+    
+    .btn-resp-quero-1 {
+        left: 10px !important;
+        bottom: -750px !important;
+        position: absolute !important;
+    }
+
+    .w-325-resp {
+        width: 325px !important;
+    }
+
+    .w-70-resp {
+        width: 70% !important;
+    }
+
+    .h-1400-resp {
+        height: 1400px !important;
+    }
+
+    .border-sm-0 {
+        border-right: none !important;
+        border-left: none !important;
+    }
+
+    .border-resp {
+        border: none !important;
+        border-bottom: 1px solid #E4EAF0 !important;
+    }
+
+    .padding-resp-perguntas {
+        padding: 50px 30px 0px !important;
+    }
+
+    .pt-650-resp {
+        padding-top: 650px !important;
+    }
+    
+    .img-ADOBESTOCK-1-resp {
+        top: 780px !important;
+        left: 0px !important;
+        width: 156px !important;
+        height: 222px !important;
+    }
+
+    .img-Mask-group-database-resp {
+        top: 865px!important;
+        left: 180px !important;
+        width: 155px !important;
+        height: 236px !important;
+    }
+
+    .img-vector-1270-resp {
+        top: 1025px !important;
+        left: 74px !important;
+        width: 82px !important;
+        height: 30px !important;
+    }
+
+    .img-vector-1271-resp {
+        top: 810px !important;
+        left: 180px !important;
+        width: 82px !important;
+        height: 30px !important;
+    }
+
+    .img-tag-resp {
+        top: 965px !important;
+        left: -16px !important;
+        width: 96px !important;
+        height: 21px !important;
+    }
+
+    .bg-white-resp {
+        background: #FFF !important;
+    }
+
+    .position-initial-sm {
+        position: initial !important;
+    }
+
+    .padding-footer {
+        padding: 70px 40px 70px 40px !important;
+    }
+
+    .btn-footer {
+        width: 100% !important;
+        padding: 15px 0 15px 0 !important;
+    }
+
+    .fs-33-resp {
+        font-size: 33px !important;
+    }
+
+    .h-1250-resp {
+        height: 1250px !important;
     }
 }
 
@@ -14153,6 +14257,11 @@ fieldset:disabled .btn {
             animation-timing-function: ease-in;
         }
     }
+
+    .borda-customizada {
+        border-color: #1d1b38 !important;
+    }
+
 `;
 
 export default GlobalStyles;
