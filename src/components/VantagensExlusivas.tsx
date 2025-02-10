@@ -5,7 +5,7 @@ const VantagensExlusivas = () => {
         <>
             <div className="d-grid align-items-start" style={{ padding: '0px !important' }}>
                 <Image
-                    className='img-fluid position-absolute opacity-25 w-100 h-1400-resp bg-img-vantagens bg-img-vantagens-resp'
+                    className='img-fluid position-absolute opacity-25 w-100 bg-img-vantagens bg-img-vantagens-resp'
                     src="/img/secao/Ellipse-133.png"
                     alt=""
                     layout="intrinsic"
@@ -14,7 +14,7 @@ const VantagensExlusivas = () => {
                     style={{ zIndex: '-9' }}
                 />
                 <Image
-                    className='img-fluid position-absolute opacity-25 w-100 h-1400-resp bg-img-vantagens bg-img-vantagens-resp'
+                    className='img-fluid position-absolute opacity-25 w-100 bg-img-vantagens bg-img-vantagens-resp'
                     src="/img/secao/Ellipse-1228.png"
                     alt=""
                     layout="intrinsic"
@@ -23,7 +23,7 @@ const VantagensExlusivas = () => {
                     style={{ zIndex: '-9' }}
                 />
                 <Image
-                    className='img-fluid position-absolute opacity-50 w-100 h-1400-resp bg-img-vantagens bg-img-vantagens-resp'
+                    className='img-fluid position-absolute opacity-50 w-100 bg-img-vantagens bg-img-vantagens-resp'
                     src="/img/secao/Mask-group-bg.png"
                     alt=""
                     layout="intrinsic"
@@ -32,7 +32,7 @@ const VantagensExlusivas = () => {
                     style={{ zIndex: '-9' }}
                 />
                 <Image
-                    className='img-fluid position-absolute opacity-75 w-100 h-1400-resp bg-img-vantagens bg-img-vantagens-resp'
+                    className='img-fluid position-absolute opacity-75 w-100 bg-img-vantagens bg-img-vantagens-resp'
                     src="/img/secao/mask-bg.png"
                     alt=""
                     layout="intrinsic"
@@ -41,7 +41,7 @@ const VantagensExlusivas = () => {
                     style={{ zIndex: '-9' }}
                 />
                 <Image
-                    className='img-fluid position-absolute opacity-25 w-100 h-1400-resp bg-img-vantagens bg-img-vantagens-resp'
+                    className='img-fluid position-absolute opacity-25 w-100 bg-img-vantagens bg-img-vantagens-resp'
                     src="/img/secao/Rectangle-7.png"
                     alt=""
                     layout="intrinsic"
@@ -50,7 +50,7 @@ const VantagensExlusivas = () => {
                     style={{ zIndex: '-9' }}
                 />
                 <Image
-                    className='img-fluid opacity-25 position-absolute w-100 h-1400-resp bg-img-vantagens bg-img-vantagens-resp'
+                    className='img-fluid opacity-25 position-absolute w-100 bg-img-vantagens bg-img-vantagens-resp'
                     src="/img/secao/Rectangle-8.png"
                     alt=""
                     layout="intrinsic"
@@ -59,7 +59,7 @@ const VantagensExlusivas = () => {
                     style={{ zIndex: '-9' }}
                 />
                 <Image
-                    className='img-fluid opacity-25 position-absolute w-100 h-1400-resp bg-img-vantagens bg-img-vantagens-resp'
+                    className='img-fluid opacity-25 position-absolute w-100 bg-img-vantagens bg-img-vantagens-resp'
                     src="/img/secao/Rectangle-9.png"
                     alt=""
                     layout="intrinsic"
@@ -68,7 +68,7 @@ const VantagensExlusivas = () => {
                     style={{ zIndex: '-11' }}
                 />
                 <Image
-                    className='img-fluid opacity-25 position-absolute w-100 h-1400-resp bg-img-vantagens bg-img-vantagens-resp'
+                    className='img-fluid opacity-25 position-absolute w-100 bg-img-vantagens bg-img-vantagens-resp'
                     src="/img/secao/Rectangle-109.png"
                     alt=""
                     layout="intrinsic"
@@ -77,7 +77,7 @@ const VantagensExlusivas = () => {
                     style={{ zIndex: '-9' }}
                 />
                 <Image
-                    className='img-fluid position-absolute w-100 h-1400-resp bg-img-vantagens bg-img-vantagens-resp'
+                    className='img-fluid position-absolute w-100 bg-img-vantagens bg-img-vantagens-resp'
                     src="/img/secao/Rectangle-105.png"
                     alt=""
                     layout="intrinsic"
@@ -86,7 +86,7 @@ const VantagensExlusivas = () => {
                     style={{ zIndex: '-11' }}
                 />
                 {/* <Image
-                    className='img-fluid position-absolute w-100 h-1400-resp bg-img-vantagens bg-img-vantagens-resp'
+                    className='img-fluid position-absolute w-100 bg-img-vantagens bg-img-vantagens-resp'
                     src="/img/secao/background-lines-2.png"
                     alt=""
                     layout="intrinsic"
@@ -95,7 +95,7 @@ const VantagensExlusivas = () => {
                     style={{ zIndex: '-10' }}
                 /> */}
                 <Image
-                    className='img-fluid position-absolute w-100 h-1400-resp bg-img-vantagens bg-img-vantagens-resp'
+                    className='img-fluid position-absolute w-100 bg-img-vantagens bg-img-vantagens-resp'
                     src="/img/secao/background-lines.png"
                     alt=""
                     layout="intrinsic"

@@ -11078,6 +11078,10 @@ fieldset:disabled .btn {
     .h-1250-resp {
         height: 1250px !important;
     }
+
+    .bg-img-vantagens-resp {
+        height: 1420px !important;
+    }
 }
 
 @media (min-width:768px) {
@@ -14312,8 +14316,10 @@ fieldset:disabled .btn {
         height: 110px !important;
     }
 
-    .bg-img-vantagens {
-        height: 1130px! important;
+    @media (min-width: 1541px) {
+        .bg-img-vantagens {
+            height: 1130px !important;
+        }
     }
 
     .tamano-icon-fale-conosco {
