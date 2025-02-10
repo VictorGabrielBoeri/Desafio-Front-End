@@ -14304,7 +14304,7 @@ fieldset:disabled .btn {
         }
 
         .bg-img-vantagens-resp {
-            height: 1420px !important;
+            height: 1100px!important;
         }
     }
 
