@@ -1,4 +1,4 @@
-import Formulario from '../components/Formulario';
+import Formulario from './Formulario';
 import CardsTopo from './CardsTopo';
 
 const ConteudoTopo = () => {

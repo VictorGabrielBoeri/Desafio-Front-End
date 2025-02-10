@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import { fetchPosts } from '../services/api';
-import BtnNavegacao from '../components/BtnNavegacao';
-import Post from '../components/Posts';
-import Paginas from '../components/Paginas';
+import BtnNavegacao from './BtnNavegacao';
+import Post from './Posts';
+import Paginas from './Paginas';
 import { useMediaQuery } from 'react-responsive';
 
 const CarrosselNoticias = () => {

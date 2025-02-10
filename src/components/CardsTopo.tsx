@@ -1,4 +1,4 @@
-import TextoTopo from "../components/TextoTopo";
+import TextoTopo from "./TextoTopo";
 
 const CardsTopo = () => {
     return (
